@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="2.5dp"
+    android:paddingBottom="2.5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <!-- ListRow Left sied Thumbnail image -->
+
+        <LinearLayout
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="7dip"
+            android:padding="2dip" >
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+                android:layout_marginRight="15dp"/>
+        </LinearLayout>
+
+        <!-- Title Of Song -->
+
+
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text="Mango"
+            android:textColor="#040404"
+            android:textSize="15dip"
+            android:typeface="sans" />
+
+        <LinearLayout
+            android:id="@+id/cart_plus_minus_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/product_name"
+            android:orientation="horizontal" >
+
+            <TextView
+
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="90dip"
+                android:layout_weight="0.27"
+                android:paddingRight="7dip"
+                android:text="TK. 280"
+                android:textColor="#1d1d1d"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/product_weight_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:paddingRight="25dip"
+                android:text="100 gm"
+                android:textColor="#343434"
+                android:textSize="12dip" />
+
+<!--            <ImageView-->
+<!--                android:clickable="true"-->
+<!--                android:id="@+id/cart_minus_img"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/ic_minus" />-->
+
+            <TextView
+                android:id="@+id/cart_product_quantity_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:text="10"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+
+<!--            <ImageView-->
+<!--                android:clickable="true"-->
+<!--                android:id="@+id/cart_plus_img"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/ic_plus" />-->
+        </LinearLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/expireDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:textAlignment="center"
+        android:hint="Expiration Date"/>
+</LinearLayout>

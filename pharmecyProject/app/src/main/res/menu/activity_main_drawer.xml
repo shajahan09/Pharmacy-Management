@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Medicine">
+        <menu>
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_view_stok_black_24dp"
+            android:title="@string/view_stok" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_add_medicine_24dp"
+            android:title="@string/add_medicine"/>
+
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_sale_cart_black_24dp"
+            android:title="@string/sale_medicine" />
+
+            <item
+                android:id="@+id/nav_slideshow"
+                android:icon="@drawable/ic_modify_medicine_24dp"
+                android:title="@string/view_sales" />
+        </menu>
+
+    </item>
+
+
+
+    <item android:title="Staff">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_person_add_black_24dp"
+                android:title="@string/add_staff"/>
+
+            <item
+                android:id="@+id/staff_view"
+                android:icon="@drawable/ic_viewperson_black_24dp"
+                android:title="@string/view_staff" />
+
+
+            <item
+                android:id="@+id/saff_salary"
+                android:icon="@drawable/ic_staff_salary_24dp"
+                android:title="@string/salary_staff"/>
+
+
+        </menu>
+    </item>
+
+
+    <item android:title="Company">
+        <menu>
+            <item
+                android:id="@+id/add_company"
+                android:icon="@drawable/ic_add_company_24dp"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/staff_modify"
+                android:icon="@drawable/ic_modify_staff_24dp"
+                android:title="@string/view_company" />
+<!--            <item-->
+<!--                android:id="@+id/delete_staff"-->
+<!--                android:icon="@drawable/ic_delete_staff_24dp"-->
+<!--                android:title="@string/view_company" />-->
+
+
+
+        </menu>
+    </item>
+
+</menu>

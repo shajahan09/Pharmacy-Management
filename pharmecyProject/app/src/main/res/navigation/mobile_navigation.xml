@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.test.pharmecyproject.ui.home.StockViewFragment"
+        android:label="@string/view_stok"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.test.pharmecyproject.ui.staff.AddProductFragment"
+        android:label="@string/add_medicine"
+        tools:layout="@layout/fragment_addproduct" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.test.pharmecyproject.ui.sale.ViewSale"
+        android:label="@string/view_sales"
+        tools:layout="@layout/fragment_view_sale" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.test.pharmecyproject.ui.sale.SaleFragment"
+        android:label="@string/sale_medicine"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.test.pharmecyproject.ui.staff.AddStaff"
+        android:label="@string/add_staff"
+        tools:layout="@layout/fragment_addstaff" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.test.pharmecyproject.ui.medicine.ViewStock_fragment"
+        android:label="@string/view_stok"
+        tools:layout="@layout/fragment_send" />
+
+    <fragment
+        android:id="@+id/saff_salary"
+        android:name="com.test.pharmecyproject.ui.staff.StaffSalary"
+        android:label="@string/salary_staff"
+        tools:layout="@layout/fragment_staff_salary" />
+    <fragment
+        android:id="@+id/staff_view"
+        android:name="com.test.pharmecyproject.ui.staff.StaffView"
+        android:label="@string/view_staff"
+        tools:layout="@layout/fragment_staff_view" />
+
+    <fragment
+        android:id="@+id/add_company"
+        android:name="com.test.pharmecyproject.ui.company.AddCompany"
+        android:label="@string/add_company"
+        tools:layout="@layout/activity_addcompany" />
+    <fragment
+        android:id="@+id/staff_modify"
+        android:name="com.test.pharmecyproject.ui.company.ViewCompany"
+        android:label="@string/view_company"
+        tools:layout="@layout/fragment_view_company" />
+</navigation>
