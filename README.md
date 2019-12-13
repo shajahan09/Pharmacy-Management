@@ -1,3 +1,3 @@
 # Phamacy-Management
 Android pharmacy management
-using Rest Api
+using Retrofit Rest Api
